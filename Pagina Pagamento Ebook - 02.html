@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cherry Store E-Book (Pagamento) </title>
+</head>
+<body>
+   <h3>E-Book Selecionado:</h3>
+   <h1>THE TIME OF PAGES por Maria Benato.</h1>
+   <div>
+      <img src="Capa Do Ebook.png" alt="login" width="500" height="700" >
+   </div>
+   
+   <div> 
+      <hr>
+      <header>
+          <h1><center>Formulário de Compra</center></h1>
+      </header>
+      <main>
+          <form method="post" action="#" >
+              <fieldset>
+                  <legend>Dados pessoais</legend>
+                  <form action="#">
+                      <label for="nome">Nome:</label>
+                      <input type="text" name="nome" placeholder="Escreva seu nome" required/>
+                      <br> <br>
+                      <label for="email">Email:</label>
+                      <input type="email" name="email" placeholder="a@a.com" required/>
+                      <br> <br>
+                      <label for="tel">Telefone:</label>
+                      <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required/> 
+                  </form>
+                  <br><br>
+                  <fieldset>
+                      <legend><strong>Forma de Pagamento:</strong></legend>
+                      <input type="radio" name="resposta" id="cartao" value="cartao de crédito" checked required/>
+                       <label for="cartao">Cartão de Crédito</label><br>
+                      <input type="radio" name="resposta" id="pix" value="pix"/>
+                      <label for="pix">Pix</label>
+                      <fieldset>
+                      <legend><strong>Dados do Cartão:</strong></legend>
+                      <label for="nome">Número do Cartão:</label>
+                       <input type="number" name="numero" placeholder="0000 0000 0000 0000" required><br><br>
+                       <br> 
+                       <img src="cartao.png">
+                       <br>
+                       <br>
+                          <label for="nome">Data da Expiração:</label>
+                          <input type="date" name="data exp" placeholder="" required><br><br>
+                          <label for="nome">CVC:</label>
+                          <input type="text" name="cod" placeholder="XXX" required>
+                          </fieldset>
+                          <fieldset>
+                              <legend>Termos de Segurança</legend>
+                              <form action="#">
+                                  <p>Na Cherry Store E-Book, priorizamos a segurança de seus dados. Utilizamos controles de acesso, criptografia e monitoramento contínuo para proteger informações contra acessos não autorizados e ameaças. Realizamos auditorias regulares e treinamentos para garantir a conformidade e a eficácia de nossas práticas de segurança. Estamos comprometidos em manter um ambiente seguro e proteger seus dados com a máxima seriedade.
+                                  </p>
+                                  <input type="checkbox" id="checkbox-aceito termos" name="Aceito termos[]" value="aceitotermos"/>
+                                  <label for="checkbox-ceito termos">Aceito termos de segurança</label>
+                                  <input type="checkbox" id="checkbox- nao aceito" name="nao aceito[]" value="nao aceito"/>
+                                  <label for="checkbox-nao aceito">Não aceito</label>
+                              </form>
+                          </fieldset>  
+                      </fieldset><br>
+                      <button><a href="pdf.html">Finalizar Pagamento</a></button>
+                  </form>
+
+                  <div vw class="enabled">
+                      <div vw-access-button class="active"></div>
+                      <div vw-plugin-wrapper>
+                        <div class="vw-plugin-top-wrapper"></div>
+                      </div>
+                    </div>
+                    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+                    <script>
+                      new window.VLibras.Widget('https://vlibras.gov.br/app');
+                    </script>
+                    <br>
+                    <br>
+                   <footer>
+
+                      <p>© 2024 Histórias e ficções. Todos os direitos reservados.</p>
+              
+                      <p><a href="privacidade.html" style="color: rgb(0, 0, 0);">Política de Privacidade</a> | <a href="termos.html"
+              
+                              style="color: rgb(0, 0, 0);">Termos de Serviço</a></p>
+              
+                  </footer>
+              
+</body>
+</html>
